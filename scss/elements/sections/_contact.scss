@@ -1,0 +1,156 @@
+.contact {
+    .container {
+        //Layout & sizing
+        flex-direction: column;
+
+        @include notebook {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        padding: 8rem 10rem 10rem;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .details {
+        width: 100%;
+
+        @include notebook {
+            width: 50%;
+        }
+
+        .box {
+            @include notebook {
+                display: flex;
+                flex-direction: row;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+
+                &:first-of-type {
+                    @include notebook {
+                        margin-right: 2rem;
+                    }
+                }
+
+                img {
+                    margin-right: 1rem;
+                    height: 2.7rem;
+                    width: 2.7rem;
+                }
+            }
+        }
+    }
+
+    //Typography
+    h1 {
+        font-size: 4rem;
+        font-family: $font-accent;
+        margin-bottom: 0.5rem;
+
+        @include notebook {
+            font-size: 4.9rem;
+        }
+    }
+
+    a {
+        margin-bottom: 1rem;
+        color: $color-grey;
+    }
+
+    h2 {
+        margin-bottom: 3rem;
+
+        @include notebook {
+            margin-bottom: 4.2rem;
+            margin-top: 2.2rem;
+        }
+    }
+
+    a,
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #707070;
+        line-height: 1.7rem;
+
+        @include notebook {
+            font-size: 1.2rem;
+            color: $color-grey;
+        }
+    }
+
+    form {
+        @include notebook {
+            width: 50%;
+        }
+
+        // FORM NAME AND EMAIL
+        .box {
+            input {
+                border: none;
+                border-bottom: 1px solid $color-grey;
+                height: 40px;
+                margin-bottom: 42px;
+                background-color: transparent;
+            }
+            label {
+                font-size: 1.1rem;
+                line-height: 1.7rem;
+                text-transform: uppercase;
+                color: $color-primary;
+                font-weight: bold;
+                letter-spacing: 0.3rem;
+            }
+        }
+
+        // FORM CHECKBOX
+
+        .consent {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            cursor: pointer;
+            font-size: 2.2rem;
+
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+                margin: 0;
+
+                &:checked{
+                    ~span{
+                        background-image: url(/images/Checkmark.svg);
+                        background-position: 50%;
+                        background-size: 50%;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 25px;
+                width: 25px;
+                border: 1px solid $color-grey;
+                border-radius: 4px;
+                background-color: white;
+            }
+        }
+    }
+}

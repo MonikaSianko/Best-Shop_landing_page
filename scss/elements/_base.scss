@@ -1,0 +1,49 @@
+html{
+  font-size: 10px !important;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: $font-main;
+  }
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-family: $font-accent;
+    font-size: 3rem;
+    font-weight: 500;
+    @include notebook{
+      font-size: 3.6rem;
+    }
+}
+
+.container {
+  max-width: 1352px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   @include notebook{
+     width: 100%;
+     padding: 0 1.5rem;
+   }
+   @include mobile{
+     width: 100%;
+     padding: 0 4rem;
+   }
+}
+
+
+.logo {
+  font-family: $font-accent;
+  font-size: 3.2rem;
+  font-weight: 200;
+  color: $color-primary;
+}

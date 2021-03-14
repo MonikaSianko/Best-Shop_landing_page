@@ -1,28 +1,29 @@
-:root{
+:root {
     --color-mainBlue: #08A6E4;
     --color-mainPink: #FB3B64;
     --color-mainGreen: #55DFB4;
     --color-shadow: rgba(7, 172, 230, .16);
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
-    --font-accent:'Raleway', sans-serif;
-    --font-main:'Open Sans', sans-serif;
+    --font-accent: 'Raleway', sans-serif;
+    --font-main: 'Open Sans', sans-serif;
 }
 
 /*GLOBAL*/
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     width: 1352px;
-    margin: 0 auto;;
+    margin: 0 auto;
+    ;
 }
 
-body{
+body {
     font-family: var(--font-main);
 }
 
@@ -30,40 +31,44 @@ body{
 
 
 
-header{
+header {
     width: 100%;
     box-shadow: 0px 3px 6px #00000029;
 }
 
-header .container{
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 70px;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
-header h1{
+header h1 {
     color: var(--color-mainBlue);
     font-family: var(--font-accent);
     font-size: 2rem;
     font-weight: normal;
 }
 
-header nav, header ul, header li, header a{
+header nav,
+header ul,
+header li,
+header a {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-header ul{
+header ul {
     list-style: none;
 }
 
-header li{
+header li {
     display: inline-block;
     padding-left: 95px;
 }
-header a{
+
+header a {
     text-decoration: none;
     font-family: var(--font-main);
     font-weight: bold;
@@ -71,7 +76,7 @@ header a{
     color: var(--color-grey);
 }
 
-header a:hover{
+header a:hover {
     color: black;
     border-bottom: 4px solid var(--color-mainBlue);
 }
@@ -82,12 +87,12 @@ header a:hover{
 
 
 
-.banner{
+.banner {
     text-align: center;
     padding-top: 130px;
 }
 
-.banner h1{
+.banner h1 {
     font-family: var(--font-accent);
     font-weight: normal;
     font-size: 49px;
@@ -95,19 +100,19 @@ header a:hover{
     margin-bottom: 20px;
 }
 
-.banner p{
+.banner p {
     font-family: var(--font-main);
     font-weight: normal;
     line-height: 22px;
 }
 
-.banner .btn{
+.banner .btn {
     display: flex;
     justify-content: center;
     padding-top: 38px;
 }
 
-.banner .btn a{
+.banner .btn a {
     text-decoration: none;
     font-family: var(--font-main);
     font-weight: bold;
@@ -118,7 +123,7 @@ header a:hover{
     padding: 22px 157px;
 }
 
-.banner .image{
+.banner .image {
     background-image: url(/images/Background.png);
     background-size: cover;
     background-position: center;
@@ -132,69 +137,69 @@ header a:hover{
 
 
 
-.statistics{
-text-align: center;
-font-family: var(--font-accent);
+.statistics {
+    text-align: center;
+    font-family: var(--font-accent);
 }
 
-.statistics .box{
+.statistics .box {
     display: flex;
     justify-content: space-evenly;
 }
 
-.statistics .content{
+.statistics .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.statistics h2{
+.statistics h2 {
     margin-top: 100px;
     font-size: 36px;
     margin-bottom: 100px;
 }
 
-.statistics h3{
+.statistics h3 {
     font-size: 20px;
     letter-spacing: 6px;
     margin: 20px 0;
 }
 
-.statistics p{
+.statistics p {
     color: var(--color-grey);
     font-size: 17px;
     margin-bottom: 120px;
 }
 
 
-.statistics .circle{
+.statistics .circle {
     border-radius: 50%;
     width: 63px;
     height: 63px;
     position: relative;
 }
 
-.statistics .circle img{
+.statistics .circle img {
     position: absolute;
 }
 
-.statistics .pink{
+.statistics .pink {
     background-color: var(--color-mainPink);
 }
 
-.statistics .blue{
+.statistics .blue {
     background-color: var(--color-mainBlue);
 }
 
-.statistics .blue img{
+.statistics .blue img {
     top: 15px;
 }
 
-.statistics .green{
+.statistics .green {
     background-color: var(--color-mainGreen);
 }
 
-.statistics .green img{
+.statistics .green img {
     top: 5px;
 }
 
@@ -204,49 +209,49 @@ font-family: var(--font-accent);
 
 
 
-.benefits{
+.benefits {
     background-color: var(--color-light-grey);
 }
 
-.benefits .container{
+.benefits .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
-.benefits .box{
+.benefits .box {
     background-color: white;
     width: 1125px;
     height: 370px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.benefits h2{
+.benefits h2 {
     font-size: 36px;
     font-family: var(--font-accent);
     font-weight: normal;
     margin-bottom: 30px;
 }
 
-.benefits p{
+.benefits p {
     font-family: var(--font-main);
     font-weight: normal;
     margin-bottom: 50px;
 }
 
-.benefits .box .text div{
+.benefits .box .text div {
     width: 330px;
 }
 
-.box .graphic{
+.box .graphic {
     position: relative;
 }
 
-.box .graphic img{
+.box .graphic img {
     position: relative;
     z-index: 2;
 }
@@ -255,28 +260,30 @@ font-family: var(--font-accent);
 /*BOX PINK*/
 
 
-.benefits .pink{
+.benefits .pink {
     margin-top: 105px;
 }
-.benefits .pink .text div{
+
+.benefits .pink .text div {
     border-bottom: 4px solid var(--color-mainPink);
 }
 
-.benefits .pink p{
+.benefits .pink p {
     width: 415px;
 }
 
-.benefits .pink .graphic{
+.benefits .pink .graphic {
     margin-top: 110px;
 }
-.benefits .pink .graphic img{
+
+.benefits .pink .graphic img {
     width: 330px;
     height: auto;
     margin-right: 117px;
     margin-bottom: 38px;
 }
 
-.benefits .pink .graphic::before{
+.benefits .pink .graphic::before {
     content: "";
     width: 180px;
     height: 180px;
@@ -293,24 +300,24 @@ font-family: var(--font-accent);
 /*BOX BLUE*/
 
 
-.benefits .blue .text div{
+.benefits .blue .text div {
     border-bottom: 4px solid var(--color-mainBlue);
 }
 
-.blue h2{
+.blue h2 {
     width: 246px;
 }
 
-.blue p{
+.blue p {
     width: 415px;
 }
 
-.blue .graphic img{
+.blue .graphic img {
     width: 425px;
     height: 330px;
 }
 
-.blue .graphic::before{
+.blue .graphic::before {
     content: "";
     width: 320px;
     height: 320px;
@@ -324,23 +331,24 @@ font-family: var(--font-accent);
 /*BOX GREEN*/
 
 
-.box-single{
+.box-single {
     display: flex;
     justify-content: space-between;
     height: 370px;
     margin-bottom: 105px;
 }
-.benefits .green .text div{
+
+.benefits .green .text div {
     border-bottom: 4px solid var(--color-mainGreen);
     width: 330px;
 }
 
-.box-single .green{
-width: 624px;
-background-color: white;
+.box-single .green {
+    width: 624px;
+    background-color: white;
 }
 
-.box-single .graphic{
+.box-single .graphic {
     width: 440px;
     background-color: var(--color-mainGreen);
     display: flex;
@@ -349,20 +357,20 @@ background-color: white;
     margin-left: 60px;
 }
 
-.box-single img{
-width: 295px;
-height: 210px;
+.box-single img {
+    width: 295px;
+    height: 210px;
 }
 
-.box-single h2{
+.box-single h2 {
     width: 350px;
 }
 
-.box-single p{
+.box-single p {
     width: 555px;
 }
 
-.box-single .text{
+.box-single .text {
     margin: 70px 0 0 35px;
 }
 
@@ -370,61 +378,61 @@ height: 210px;
 
 /*PRICING*/
 
-.pricing-boxes{
+.pricing-boxes {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.pricing-boxes .box{
+.pricing-boxes .box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.pricing{
+.pricing {
     text-align: center;
     padding: 100px 180px;
 }
 
-.pricing h2{
+.pricing h2 {
     font-family: var(--font-accent);
     font-size: 36px;
     font-weight: normal;
     margin-bottom: 50px;
 }
 
-.pricing h3{
+.pricing h3 {
     font-family: var(--font-accent);
     font-size: 21px;
     font-weight: bold;
     margin: 34px 0 14px 0;
 }
 
-.pricing h4{
+.pricing h4 {
     font-family: var(--font-main);
     font-size: 46px;
     font-weight: 300;
 }
 
-.pricing h5{
+.pricing h5 {
     margin-top: 5px;
     margin-bottom: 60px;
     height: 14px;
 }
 
-.pricing ul{
+.pricing ul {
     list-style: none;
 }
 
-.pricing li{
+.pricing li {
     margin-bottom: 20px;
     font-size: 14px;
     font-family: var(--font-main);
     font-weight: normal;
 }
 
-.pricing a{
+.pricing a {
     text-decoration: none;
     font-family: var(--font-main);
     font-size: 13px;
@@ -444,9 +452,9 @@ height: 210px;
     background-size: contain;
 }
 
-.details .not::before{
+.details .not::before {
     background-image: url("../images/Close.svg");
-        background-position: center;
+    background-position: center;
     background-size: contain;
 }
 
@@ -455,7 +463,7 @@ height: 210px;
 /*BASIC & PREMIUM*/
 
 .basic,
-.premium{
+.premium {
     border-radius: 18px;
     position: relative;
     width: 372px;
@@ -463,38 +471,42 @@ height: 210px;
 }
 
 .basic a,
-.premium a{
+.premium a {
     position: absolute;
     bottom: -25px;
 }
 
 /*basic*/
 
-.basic h4{
+.basic h4 {
     color: var(--color-mainPink);
 }
-.basic a{
-background-color: var(--color-mainPink);
+
+.basic a {
+    background-color: var(--color-mainPink);
 }
-.basic{
-border: 1px solid var(--color-mainPink);
+
+.basic {
+     var(--color-mainPink);
 }
 
 /*premium*/
 
-.premium h4{
+.premium h4 {
     color: var(--color-mainGreen);
 }
-.premium a{
-background-color: var(--color-mainGreen);
+
+.premium a {
+    background-color: var(--color-mainGreen);
 }
-.premium{
-border: 1px solid var(--color-mainGreen);
+
+.premium {
+    border: 1px solid var(--color-mainGreen);
 }
 
 /*profesional*/
 
-.profesional{
+.profesional {
     border-radius: 18px;
     border: 1px solid var(--color-mainBlue);
     position: relative;
@@ -503,12 +515,13 @@ border: 1px solid var(--color-mainGreen);
     margin: 0 60px;
 }
 
-.profesional a{
+.profesional a {
     background-color: var(--color-mainBlue);
     position: absolute;
     bottom: -25px;
 }
-.profesional h4{
+
+.profesional h4 {
     color: var(--color-mainBlue);
 }
 
@@ -519,26 +532,27 @@ border: 1px solid var(--color-mainGreen);
 
 /*contact details*/
 
-.contact .container{
+.contact .container {
     display: flex;
     justify-content: space-around;
 }
 
-.contact h1,h2{
+.contact h1,
+h2 {
     font-family: var(--font-accent);
     font-weight: normal;
 }
 
-.contact h1{
+.contact h1 {
     font-size: 49px;
     margin-bottom: 22px;
 }
 
-.contact .details .box{
+.contact .details .box {
     margin-top: 42px;
 }
 
-.contact .details .box a{
+.contact .details .box a {
     font-family: var(--font-main);
     font-weight: normal;
     color: var(--color-grey);
@@ -548,16 +562,16 @@ border: 1px solid var(--color-mainGreen);
 
 /*contact form*/
 
-.contact form{
+.contact form {
     width: 440px;
 }
 
-.contact form .box{
+.contact form .box {
     display: flex;
     flex-direction: column;
 }
 
-.contact form .box label{
+.contact form .box label {
     text-transform: uppercase;
     color: var(--color-mainBlue);
     font-family: var(--font-main);
@@ -567,15 +581,15 @@ border: 1px solid var(--color-mainGreen);
     font-weight: bold;
 }
 
-input{
-    border:none;
+input {
+
     border-bottom: 1px solid #95989A;
     height: 40px;
     margin-bottom: 42px;
     background-color: transparent;
 }
 
-.contact .checkbox{
+.contact .checkbox {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -583,7 +597,7 @@ input{
     cursor: pointer;
 }
 
-.checkbox input{
+.checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -591,7 +605,7 @@ input{
     width: 0;
 }
 
-.checkbox span{
+.checkbox span {
     position: absolute;
     top: 0;
     left: 0;
@@ -602,14 +616,14 @@ input{
     border-radius: 4px;
 }
 
-.checkbox input:checked ~ span{
+.checkbox input:checked~span {
     background-image: url(../images/Checkmark.svg);
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
 }
 
-.checkbox p{
+.checkbox p {
     font-family: var(--font-main);
     font-size: 12px;
     line-height: 17px;
@@ -618,13 +632,13 @@ input{
 }
 
 
-.contact form .btn{
+.contact form .btn {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
 
-.contact form button{
+.contact form button {
     width: 226px;
     height: 57px;
     background-color: var(--color-mainBlue);
@@ -645,20 +659,20 @@ input{
 /*FOOTER*/
 
 
-footer{
+footer {
     height: 89px;
     width: 100%;
     box-shadow: 0px -5px 40px #00000029;
 }
 
-footer .container{
+footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-footer .info h1{
+footer .info h1 {
     font-family: var(--font-accent);
     font-size: 26px;
     font-weight: 300;
@@ -666,7 +680,7 @@ footer .info h1{
     color: var(--color-mainBlue);
 }
 
-footer .info p{
+footer .info p {
     font-family: var(--font-main);
     font-size: 11px;
     font-weight: normal;
@@ -674,6 +688,7 @@ footer .info p{
     color: var(--color-grey);
 }
 
-footer .icons img:nth-child(1){
-    margin-right: 20px;;
+footer .icons img:nth-child(1) {
+    margin-right: 20px;
+    ;
 }

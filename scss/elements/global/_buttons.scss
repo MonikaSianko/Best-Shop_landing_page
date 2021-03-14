@@ -1,0 +1,52 @@
+.btn {
+    font-weight: bold;
+    color: white;
+    box-shadow: $color-primary-shadow;
+}
+
+.pricing {
+    .box {
+        position: relative;
+        .btn {
+            position: absolute;
+            border-radius: 2.3rem;
+            top: 92%;
+            @include notebook{
+                top: 95%;
+            }
+        }
+        
+        &:first-of-type .btn {
+            background-color: $color-pink;
+            padding: 1.6rem 5.7rem;
+        }
+
+        &:nth-of-type(2) .btn {
+            background-color: $color-primary;
+            padding: 1.6rem 5.7rem;
+        }
+
+        &:last-of-type .btn {
+            background-color: $color-green;
+            padding: 1.6rem 5.7rem;
+        }
+
+    }
+}
+
+.contact {
+    form {
+        button {
+            background-color: $color-primary;
+            border: none;
+            box-shadow: 5px 10px 14px$color-primary-shadow;
+            border-radius: 35px;
+            padding: 2rem 9.7rem;
+            font-size: 1.3rem;
+            margin-bottom: 6rem;
+            margin-top: 2rem;
+            cursor: pointer;
+            float: right;
+        }
+    }
+}

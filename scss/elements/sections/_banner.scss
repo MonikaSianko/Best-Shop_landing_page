@@ -1,0 +1,41 @@
+.banner{
+    width: 100%;
+    .image{
+        background-image: url(/images/Background.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 27rem;
+    }
+    .container{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10rem;
+    h1{
+        font-family: $font-accent;
+        font-weight: normal;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        @include notebook{
+            font-size: 4.9rem;
+        }
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    .btn{
+        font-size: 1.6rem;
+        background-color: $color-primary;
+        border-radius: 40px;
+        padding: 2.2rem 7rem;
+        margin-top: 28px ;
+        box-shadow: 5px 10px 14px #07ACE629;
+        @include notebook{
+            margin-bottom: 4rem;
+            padding: 2.2rem 16rem;
+        }
+    }
+
+    }
+}
+

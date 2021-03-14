@@ -1,0 +1,218 @@
+.benefits {
+    background-color: $color-light-grey;
+
+    .container {
+        flex-direction: column;
+
+        .box {
+            background-color: white;
+            width: 31rem;
+            border-radius: 5px;
+            margin-top: 5rem;
+            padding-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column-reverse;
+            position: relative;
+
+            @include notebook {
+                flex-direction: row;
+                width: 90%;
+                padding: 9rem 3.6rem;
+                height: 37rem;
+            }
+
+            img {
+                position: relative;
+                z-index: 2;
+            }
+
+            .graphic {
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $color-green;
+                border-radius: 5px;
+                width: 100%;
+                @include notebook{
+                    width:44rem;
+                    height: 100%;
+                }
+            }
+
+            .text {
+                padding: 3rem 2rem;
+            
+                &:last-of-type {
+            
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            
+                @include notebook {
+                    width: 40rem;
+                    padding: 0;
+                    height: 100%;
+                    &::after {
+                        content: "";
+                        width: 80%;
+                        display: block;
+                        margin-top: 5rem;
+            
+                    }
+                }
+            
+                h2 {
+                    padding-bottom: 3.5rem;
+                }
+            
+                p {
+                    font-size: 1.4rem;
+            
+                    @include notebook {
+                        font-size: 1.6rem;
+            
+                    }
+            
+                }
+            }
+
+            //BOX - FIST OF TYPE ALL STYLES//
+
+
+            &:first-of-type {
+
+                img{
+                    max-height: 11rem;
+                    width: auto;
+                }
+
+                @include notebook {
+                    display: flex;
+                    flex-direction: row;
+
+                    .text {
+                        &::after {
+                            border: 2px solid $color-pink;
+                        }
+                    }
+
+                    img {
+                        max-height: 22rem;
+                        padding-right: 3rem;
+
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 40px;
+                    background-color: $color-pink;
+                    display: block;
+                    position: absolute;
+                    transform: rotate(45deg);
+                    right: 4rem;
+                    top: 3rem;
+
+                    @include notebook {
+                        width: 16rem;
+                        height: 16rem;
+                        right: 15rem;
+                        top: 5rem;
+
+                    }
+                }
+            }
+
+            //BOX - SECOND OF TYPE ALL STYLES//
+
+            &:nth-of-type(2) {
+
+                img{
+                    max-height: 17.5rem;
+                    width: auto;
+                }
+
+                @include notebook {
+                    flex-direction: row-reverse;
+
+                    .text {
+                        &::after {
+                            border: 2px solid $color-primary;
+                        }
+                    }
+
+                    img {
+                        max-height: 33rem;
+                        padding-right: 3rem;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 16rem;
+                    height: 16rem;
+                    border-radius: 50%;
+                    background-color: $color-primary;
+                    display: block;
+                    position: absolute;
+                    top: 3.5rem;
+                    left: 5.5rem;
+
+                    @include notebook {
+                        width: 30rem;
+                        height: 30rem;
+                        left: 15rem;
+                        top: 2rem;
+
+                    }
+                }
+            }
+
+            //BOX - LAST OF TYPE ALL STYLES//
+
+            &:last-of-type {
+                margin-bottom: 4rem;
+                padding: 0;
+                justify-content: space-between;
+                flex-direction: column;
+                
+
+                img {
+                    max-width: 29rem;
+                }
+
+
+                @include notebook {
+                    background-color: $color-light-grey;
+                    flex-direction: row;;
+
+                    .text {
+                        background-color: white;
+                        padding: 9rem 3.6rem;
+                        width: 62rem;
+                        margin-right: 6rem;
+
+                        &::after {
+                            border: 2px solid $color-green;
+                        }
+
+                    }
+                    img{
+                        width: 44rem;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+
+

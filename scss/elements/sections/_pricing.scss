@@ -1,0 +1,165 @@
+.pricing {
+    text-align: center;
+    margin: 6rem 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @include notebook{
+            flex-direction: row;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            margin: 3rem 0;
+            border-radius: 1.8rem;
+            padding: 4rem 2rem;
+
+            @include notebook{
+                flex-direction: column;
+            }
+
+            // Button position & color
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 2rem;
+
+                @include notebook{
+                    margin-bottom: 6rem;
+                }
+            }
+
+            // Border & size
+            &:first-of-type {
+                border: 1px solid $color-pink;
+                width: 30rem;
+                h4 {
+                    color: $color-pink;
+                }
+                @include notebook{
+                    max-width: 37rem;
+                }
+            }
+
+            &:nth-of-type(2) {
+                border: 1px solid $color-primary;
+                box-shadow: 5px 10px 27px $color-primary-shadow;
+                width: 32rem;
+                h4 {
+                    color: $color-primary;
+                }
+                @include notebook{
+                    max-width: 40rem;
+                    margin: 0 2rem;
+                }
+            }
+
+            &:last-of-type {
+                border: 1px solid $color-green;
+                width: 30rem;
+                h4 {
+                    color: $color-green;
+                }
+                @include notebook{
+                    max-width: 37rem;
+                }
+            }
+
+
+
+            //Typography
+
+            h2,
+            h3,
+            h5 {
+                font-family: $font-accent;
+            }
+
+            h3,
+            h5 {
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 3.6rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            h4 {
+                font-size: 4.6rem;
+                font-weight: 300;
+                padding: 1rem 0;
+            }
+
+            h5 {
+                font-size: 1rem;
+            }
+
+            a {
+                font-size: 1.3rem;
+            }
+
+            li {
+                font-size: 1.4rem;
+            }
+        }
+
+        //List
+        .list {
+            display: flex;
+
+            @include notebook{
+                margin-bottom: 4rem;
+                justify-content: center;
+            }
+
+            li {
+                margin-bottom: 20px;
+                text-align: left;
+                padding-left: 1rem;
+            }
+
+                    .yes {
+                        &::before {
+                            content: "";
+                            width: 1rem;
+                            height: 1rem;
+                            display: inline-block;
+                            margin-right: 1rem;
+                            background-image: url("../images/Ckechmark-1.svg");                        
+                        }   
+    
+
+
+                    }
+
+                    .not {
+                        &::before {
+                            content: "";
+                            width: 1rem;
+                            height: 1rem;
+                            display: inline-block;
+                            margin-right: 1rem;
+                            background-image: url("/images/Close.svg");                        
+                        }
+                    }
+
+                
+            }
+        }
+    }
+
+    
