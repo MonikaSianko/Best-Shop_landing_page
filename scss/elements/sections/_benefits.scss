@@ -23,6 +23,13 @@
                 height: 37rem;
             }
 
+            @include tablet{
+                flex-direction: row;
+                width: 80%;
+                padding: 5rem 1.5rem;
+                height: 30rem;
+            }
+
             img {
                 position: relative;
                 z-index: 2;
@@ -38,6 +45,9 @@
                 width: 100%;
                 @include notebook{
                     width:44rem;
+                    height: 100%;
+                }
+                @include tablet {
                     height: 100%;
                 }
             }
@@ -56,6 +66,16 @@
                     width: 40rem;
                     padding: 0;
                     height: 100%;
+                    &::after {
+                        content: "";
+                        width: 80%;
+                        display: block;
+                        margin-top: 5rem;
+            
+                    }
+                }
+
+                @include tablet {
                     &::after {
                         content: "";
                         width: 80%;
@@ -107,6 +127,14 @@
                     }
                 }
 
+                @include tablet{
+                    .text {
+                        &::after {
+                            border: 2px solid $color-pink;
+                        }
+                    }
+                }
+
                 &::before {
                     content: "";
                     width: 10rem;
@@ -125,6 +153,11 @@
                         right: 15rem;
                         top: 5rem;
 
+                    }
+
+                    @include tablet{
+                        right: 2rem;
+                        top: 7rem; 
                     }
                 }
             }
@@ -152,6 +185,14 @@
                         padding-right: 3rem;
                     }
                 }
+                @include tablet {
+                    .text {
+                        &::after {
+                            border: 2px solid $color-primary;
+                        }
+                    }
+
+                }
 
                 &::before {
                     content: "";
@@ -170,6 +211,10 @@
                         left: 15rem;
                         top: 2rem;
 
+                    }
+                    @include tablet {
+                        left: 43rem;
+                        top: 4rem;
                     }
                 }
             }
@@ -190,7 +235,7 @@
 
                 @include notebook {
                     background-color: $color-light-grey;
-                    flex-direction: row;;
+                    flex-direction: row;
 
                     .text {
                         background-color: white;
@@ -201,12 +246,20 @@
                         &::after {
                             border: 2px solid $color-green;
                         }
-
                     }
                     img{
                         width: 44rem;
                     }
 
+                }
+
+                @include tablet {
+                    flex-direction: row;
+                    .text{
+                    &::after {
+                        border: 2px solid $color-green;
+                    }
+                }                 
                 }
             }
         }

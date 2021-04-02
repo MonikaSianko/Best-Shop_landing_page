@@ -16,6 +16,10 @@
 
         }
 
+        @include tablet {
+            display: flex;
+        }
+
 
         .content {
             display: flex;
@@ -26,6 +30,10 @@
                 @include notebook {
                     margin: 0 20rem;
                 }
+                @include tablet {
+                    margin: 0 10rem;
+                }
+        
             }
 
             h3 {

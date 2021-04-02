@@ -1,5 +1,12 @@
 @mixin notebook {
-    @media (min-width: 793px) {
+    @media (min-width: 921px) {
+      @content;
+    }
+  }
+
+  
+  @mixin tablet {
+    @media (min-width: 793px) and (max-width: 920px) {
       @content;
     }
   }

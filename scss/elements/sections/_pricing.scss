@@ -11,6 +11,10 @@
         @include notebook{
             flex-direction: row;
         }
+        @include tablet{
+            flex-direction: row;
+        }
+
 
         .box {
             display: flex;
@@ -22,6 +26,9 @@
             padding: 4rem 2rem;
 
             @include notebook{
+                flex-direction: column;
+            }
+            @include tablet{
                 flex-direction: column;
             }
 
@@ -37,6 +44,9 @@
                 @include notebook{
                     margin-bottom: 6rem;
                 }
+                @include tablet{
+                    margin-bottom: 4rem;
+                }
             }
 
             // Border & size
@@ -48,6 +58,9 @@
                 }
                 @include notebook{
                     max-width: 37rem;
+                }
+                @include tablet{
+                    max-width: 22rem;
                 }
             }
 
@@ -62,6 +75,9 @@
                     max-width: 40rem;
                     margin: 0 2rem;
                 }
+                @include tablet{
+                    max-width: 25rem;
+                }
             }
 
             &:last-of-type {
@@ -72,6 +88,9 @@
                 }
                 @include notebook{
                     max-width: 37rem;
+                }
+                @include tablet{
+                    max-width: 22rem;
                 }
             }
 
