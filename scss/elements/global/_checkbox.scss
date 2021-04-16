@@ -1,0 +1,28 @@
+.checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin: 0;
+
+    &:checked {
+        ~ .checkbox-span {
+            background-image: url(/images/Checkmark.svg);
+            background-position: 50%;
+            background-size: 50%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.checkbox-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid $color-grey;
+    border-radius: 4px;
+    background-color: white;
+}

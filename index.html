@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BestShop</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/scss/main.css">
 </head>
 
 <body>
@@ -179,6 +179,74 @@
         </div>
     </section>
 
+    <section class="calc">
+        <h2>Calculate how much you’ll pay</h2>
+
+        <div class="calc-columns">
+            <form class="form">
+                <input type="number" class="products-input" id="products" min="1" step="1"
+                    placeholder="Products quantity" />
+                <input type="number" class="orders-input" id="orders" min="1" step="1"
+                    placeholder="Estimated orders in month" />
+
+                <div class="select" id="package" data-value="">
+                    <div class="select-input">
+                        Choose package
+                    </div>
+
+                    <ul class="dropdown">
+                        <li data-value="basic">Basic</li>
+                        <li data-value="professional">Professional</li>
+                        <li data-value="premium">Premium</li>
+                    </ul>
+                </div>
+
+                <label class="checkbox accounting">
+                    <input type="checkbox" id="accounting" class="checkbox-input" />
+                    <span class="checkbox-span"></span>
+                    <p class="consent-text">Accounting</p>
+                </label>
+                <label class="checkbox terminal">
+                    <input type="checkbox" id="terminal" class="checkbox-input" />
+                    <span class="checkbox-span"></span>
+                    <p class="consent__text">Rental of a payment terminal</p>
+                </label>
+            </form>
+
+            <div class="summary">
+                <ul>
+                    <li class="item" data-id="products">
+                        <span class="type">Products</span>
+                        <span class="calc"></span>
+                        <span class="price"></span>
+                    </li>
+                    <li class="item" data-id="orders">
+                        <span class="type">Orders</span>
+                        <span class="calc"></span>
+                        <span class="price"></span>
+                    </li>
+                    <li class="item" data-id="package">
+                        <span class="type">Package</span>
+                        <span class="calc"></span>
+                        <span class="price"></span>
+                    </li>
+                    <li class="item" data-id="accounting">
+                        <span class="type">Accounting</span>
+                        <span class="price"></span>
+                    </li>
+                    <li class="item" data-id="terminal">
+                        <span class="type">Terminal</span>
+                        <span class="price"></span>
+                    </li>
+                </ul>
+                <div class="total" id="total-price">
+                    <span>Total</span>
+                    <span class="total-price"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="contact">
         <div class="container">
@@ -204,15 +272,15 @@
                     <input type="text" name="email" id="email">
                 </div>
                 <label class="consent">
-                    <input type="checkbox" name="check" id="checkbox">
-                    <span></span>
+                    <input type="checkbox" name="check" id="checkbox" class="checkbox-input">
+                    <span class="checkbox-span"></span>
                     <p>I hereby give consent for my personal data included in my application to be
                         processed for the purposes of the recruitment process under the European Parliament’s and
                         Council of the European Union Regulation on the Protection of Natural Persons as of 27 April
                         2016, with regard to the processing of personal data and on the free movement of such data,
                         and
                         repealing Directive 95/46/EC (Data Protection Directive)</p>
-                    </label>
+                </label>
 
                 <button type="submit" class="btn">Send</button>
 
@@ -234,5 +302,7 @@
         </div>
     </footer>
 </body>
+
+<script src="/app.js"></script>
 
 </html>

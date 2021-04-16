@@ -1,9 +1,6 @@
-
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
 // ELEMENTS
 
@@ -13,7 +10,6 @@
 // Settings //
 @import "settings/variables";
 @import "settings/mixins";
-
 
 // Global //
 @import "elements/global/buttons";
@@ -26,6 +22,7 @@
 @import "elements/sections/statistics";
 @import "elements/sections/benefits";
 @import "elements/sections/pricing";
+@import "elements/global/checkbox";
+@import "elements/sections/calculator";
 @import "elements/sections/contact";
 @import "elements/sections/footer";
-
